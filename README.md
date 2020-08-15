@@ -69,7 +69,7 @@ docker run --name cover-letter-generator-gpt2 --env-file=.env -p 8080:8080 cover
 ```
 Dear James,
 
-I'm Alejandro Díaz, a experienced pilot, and I would like to express my  
+I'm Alejandro Díaz, an experienced pilot, and I would like to express my  
 ```
 **GENERATED** 
 ```
