@@ -31,7 +31,7 @@ More information about how GPT-2 was trained to generate Cover Letters: [Cover L
 
 1- Clone the repository in your local machine:
 ```
-git clone git@github.com:alejandrods/text-generation-gpt2.git
+https://github.com/alejandrods/cover-letter-generator-gpt2
 ```
 
 2- Download model using `get_model.py`
@@ -46,12 +46,12 @@ N_TOKENS (Number of words to be generated - i.e: 20)
 
 4- Build Image using Docker
 ```
-docker build --tag text-generator-gpt2 .
+docker build --tag cover-letter-generator-gpt2:latest .
 ```
 
 5- Run Docker Image
 ```
-docker run --name text-generator-gpt2 --env-file=.env -p 8080:8080 text-generator-gpt2
+docker run --name cover-letter-generator-gpt2 --env-file=.env -p 8080:8080 cover-letter-generator-gpt2
 ```
 
 6- Visit `http://localhost:8080`
@@ -65,8 +65,31 @@ docker run --name text-generator-gpt2 --env-file=.env -p 8080:8080 text-generato
 
 <a name="Examples"></a>
 ## Examples
-**INPUT:** Australia recorded its deadliest day of the coronavirus pandemic on Wednesday and the biggest daily rise in infections in three days, denting hopes that a second wave gripping the state of Victoria may be stabilising. 
-**GENERATED:** More people died at the hospital than in any week at the time of the pandemic – up from just six in 2013.
+**INPUT** 
+```
+Dear James,
 
-**INPUT:** Australia recorded its deadliest day of the coronavirus pandemic on Wednesday and the biggest daily rise in infections in three days, denting hopes that a second wave gripping the state of Victoria may be stabilising. 
-**GENERATED:** More people died at the hospital than in any week at the time of the pandemic – up from just six in 2013.
+I'm Alejandro Díaz, a experienced pilot, and I would like to express my  
+```
+**GENERATED** 
+```
+Dear James,
+
+I'm Alejandro Díaz, a experienced pilot, and I would like to express my sincere interest in the Pilot position you have available with the Aviation School.
+My education and my experience in flying students would make me a valuable asset to your school. As a proven and experienced Air Force
+```
+___
+
+**INPUT** 
+```
+Dear Nick,
+
+I am Alex and I am very interested in the Software Engineer role at your company.   
+```
+**GENERATED** 
+```
+Dear Nick,
+
+I am Alex and I am very interested in the Software Engineer role at your company. As a technical engineer, I have developed a wide array of tools for software development, documentation, and analysis, and have been awarded several awards for my expertise in the IT/UX problem solving position at River Tech.
+First, I was able to use my knowledge of Microsoft Exchange, Windows 9,
+```
