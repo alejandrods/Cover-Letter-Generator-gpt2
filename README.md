@@ -1,9 +1,10 @@
 # Cover Letter Generator using GPT2 - Service Deployed on Google Cloud
 
-Using [GPT2 model](https://huggingface.co/jonasmue/cover-letter-gpt2) trained we can generate some realistic and awesome text.
-The main objective of this project is to create a service for generating text using GPT2 model. We've built the application using flask and docker, the service is deployed on Cloud Run (GCP).
+Everyone knows that writing letters of recommendation is hard work and not everyone's cup of tea, but on the other hand 
+it is essential to be able to apply for some jobs. Why not use artificial intelligence to do so?
+I have created an application using the [GPT2 model](https://huggingface.co/jonasmue/cover-letter-gpt2) model trained to generate letters of recommendation. The application is built using flask and docker, the service is deployed on Cloud Run (GCP).
 
-Try it [HERE](https://text-generator-gpt2-app-6q7gvhilqq-lz.a.run.app/) :computer::bowtie:
+Try it [HERE](https://cover-letter-generator-gpt2-app-6q7gvhilqq-lz.a.run.app) :computer::bowtie:
 
 ## Table of Contents  
 
@@ -22,6 +23,8 @@ GPT-2 is a large transformer-based language model with 1.5 billion parameters, t
 - GPT-2 was trained with a causal language modeling (CLM) objective and is therefore powerful at predicting the next token in a sequence. Leveraging this feature allows GPT-2 to generate syntactically coherent text as it can be observed in the run_generation.py example script.
 
 - The PyTorch models can take the past as input, which is the previously computed key/value attention pairs. Using this past value prevents the model from re-computing pre-computed values in the context of text generation. See reusing the past in generative models for more information on the usage of this argument.
+
+More information about how GPT-2 was trained to generate Cover Letters: [Cover Letters GPT-2](https://jonasportfol.io/posts/cover-letters-gpt2)
 
 <a name="Deploy"></a>
 ## Running the App
