@@ -1,0 +1,2 @@
+# Exclude files and directories whose names start with download
+*/download*

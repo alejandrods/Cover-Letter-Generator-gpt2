@@ -1,0 +1,8 @@
+# Ignore .idea and .DS_Store file
+*.idea
+*.DS_Store
+__pycache__/
+/Models/**
+/gpt2/**
+/distilgpt2/**
+/coverletter2/**

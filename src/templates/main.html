@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="GPT2 Cover Letter Generator">
+    <meta name="author" content="Alejandro Diaz">
+    <meta name="keywords" content="GPT2, Python, Text Generator, Machine Learning, Cover Letter">
+    <link rel="shortcut icon" href="../static/resources/favicon.ico">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+    <title>GPT2 Cover Letter Generator</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+    <link href="../static/style/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/style/product.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/851e118827.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158669386-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-158669386-5');
+    </script>
+</head>
+
+<body>
+    <nav class="site-header sticky-top py-1" style="background-color: #343A40">
+        <div class="container d-flex flex-column flex-md-row justify-content-between" style="background-color: #343A40">
+            <a class="py-2 d-none d-md-inline-block" href="https://github.com/alejandrods/cover-letter-generator-gpt2"><i
+                    class="fab fa-github-square"></i> Code<span class="sr-only">(current)</span></a>
+            <a class="py-2 d-none d-md-inline-block" href="https://www.linkedin.com/in/alejandro-diaz-santos-8aab812a/"><i
+                    class="fab fa-linkedin"></i> LinkedIn</a>
+            <a class="py-2 d-none d-md-inline-block" href="https://alejandrods.github.io"><i class="far fa-user-circle"></i>
+                My Website</a>
+            <a class="py-2 d-none d-md-inline-block" href="https://alejandrods.github.io#contact"><i
+                    class="far fa-address-card"></i> Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="container">
+            <h2 class="my-5 mx-lg-5" id="title" style="font-weight: bold;">
+                <strong>Hi! this is GPT-2 for Cover Letters</strong>
+            </h2>
+            <div class="px-lg-5 pt-0">
+                <form class="md-form" style="color: #757575;" spellcheck="false">
+                    <textarea name="text" class="form-control md-textarea" rows="10" id="textarea"
+                        placeholder="Write something here to start generating..."></textarea>
+                    <button type="button" class="rounded btn btn-primary float-right"
+                            id="generate_btn" disabled>Press Tab or Space
+                    </button>
+                </form>
+                <div class="col-12 col-md" id="made_by">
+                        <small class="d-block mb-3 text-muted float-right">Made in <i class="em em-flag-au" aria-role="presentation"
+                        aria-label="Australia Flag"></i> by <a href="https://alejandrods.github.io" style="text-decoration: none;">Alejandro Diaz</a></small>
+                </div>
+                <div class="my-sm-1 py-1"></div>
+            </div>
+            <hr>
+            <div class="px-lg-5 pt-0">
+                <button type="button" onclick="autoGenerate()" class="rounded btn btn-primary float-right"
+                    id="autoGenerate">Autogenerate
+                </button>
+                <div class="my-3 py-3">
+                    <p class="lead" id="prediction" style="white-space: pre-line;">The prediction will appear here...</p>
+                </div>
+            </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+    <script src="../static/main.js"></script>
+</body>
+</html>
