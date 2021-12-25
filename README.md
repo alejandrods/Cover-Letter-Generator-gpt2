@@ -46,7 +46,12 @@ N_TOKENS (Number of words to be generated - i.e: 20)
 
 4- Build Image using Docker
 ```
-docker build --tag cover-letter-generator-gpt2:latest .
+docker build -t cover-letter-generator-gpt2 .
+```
+
+If you are using Apple M1 Chip:
+```
+docker buildx build --platform linux/amd64 -t cover-letter-generator-gpt2 .   
 ```
 
 5- Run Docker Image
@@ -69,13 +74,13 @@ docker run --name cover-letter-generator-gpt2 --env-file=.env -p 8080:8080 cover
 ```
 Dear James,
 
-I'm Alejandro Díaz, an experienced pilot, and I would like to express my  
+I'm Alex Díaz, an experienced pilot, and I would like to express my  
 ```
 **GENERATED** 
 ```
 Dear James,
 
-I'm Alejandro Díaz, a experienced pilot, and I would like to express my sincere interest in the Pilot position you have available with the Aviation School.
+I'm Alex Díaz, a experienced pilot, and I would like to express my sincere interest in the Pilot position you have available with the Aviation School.
 My education and my experience in flying students would make me a valuable asset to your school. As a proven and experienced Air Force
 ```
 ___

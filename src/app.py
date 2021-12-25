@@ -1,10 +1,8 @@
-# -*- coding: utf-8 -*-
-
 import os
 import json
 import flask
 import logging
-from textblob import TextBlob
+from langdetect import detect as lang_detect
 from generate import generate
 from flask_cors import CORS, cross_origin
 
@@ -61,8 +59,7 @@ def prediction():
 
     logging.info('Query received: {}'.format(income_query))
 
-    arg_lang = TextBlob(income_query)
-    lang = arg_lang.detect_language()
+    lang = lang_detect(income_query)
     logging.info('Lang detected: {}'.format(lang))
 
     if lang == 'en':
